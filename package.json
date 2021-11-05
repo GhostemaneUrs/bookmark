@@ -1,0 +1,14 @@
+{
+  "name": "landingpage",
+  "version": "1.0.0",
+  "description": "Learning to use tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "build:tailwinds": "tailwind build -i src/style.css -o public/css/style.css"
+  },
+  "author": "GhostemaneUrs",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}

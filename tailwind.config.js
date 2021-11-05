@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    fontFamily: {
+      Poppins: ['Poppins, sans-serif']
+    },
     container: {
       center: true,
       padding: '16px',

@@ -4,7 +4,7 @@
   "description": "Learning to use tailwindcss",
   "main": "index.js",
   "scripts": {
-    "build:tailwinds": "tailwind build -i src/style.css -o public/resources/css/style.css"
+    "build:tailwinds": "tailwind build -i src/style.css -o public/css/style.css"
   },
   "author": "GhostemaneUrs",
   "license": "ISC",

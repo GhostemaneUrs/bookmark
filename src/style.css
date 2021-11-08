@@ -10,10 +10,10 @@
 }
 
 .btn-purple {
-  @apply bg-bookmard-purple text-white;
+  @apply bg-bookmark-purple text-white;
 }
 
 .btn-white {
-  @apply bg-bookmard-white;
+  @apply bg-bookmark-white;
 }
 

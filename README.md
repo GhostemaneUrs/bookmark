@@ -1,2 +1,2 @@
 # LandingPage
-Learning to use tailwindcss 
+Learning to use tailwindcss

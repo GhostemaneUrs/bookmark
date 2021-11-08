@@ -33,7 +33,7 @@ iconNavBookmark.addEventListener('click', () => {
     }
 })
 
-const cerrarMenu = () => {
+const closeMenu = () => {
     logoBookmark.classList.toggle('hidden')
     contendorEnlaces.classList.toggle('hidden');
     body.classList.toggle('overflow-hidden')

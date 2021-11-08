@@ -3,8 +3,8 @@ const iconNavBookmark = document.getElementById('iconNavBookmark');
 const logoBookmark = document.getElementById('logoBookmark');
 const navLogoBookmark = document.getElementById('navLogoBookmark');
 const accordionTitle = document.querySelectorAll('#accordionTitle');
-const contendorEnlaces = document.getElementById('navEnlace');
-const menuEnlace = document.getElementById('menuEnlace');
+const contenedorEnlaces = document.getElementById('navEnlace');
+
 
 accordionTitle.forEach((accordionTitle) => {
     accordionTitle.addEventListener('click', () => {
@@ -20,26 +20,26 @@ accordionTitle.forEach((accordionTitle) => {
 
 iconNavBookmark.addEventListener('click', () => {
     logoBookmark.classList.toggle('hidden')
-    contendorEnlaces.classList.toggle('hidden');
+    contenedorEnlaces.classList.toggle('hidden');
     body.classList.toggle('overflow-hidden')
     if (navLogoBookmark.classList.contains('hidden')) {
         navLogoBookmark.classList.remove('hidden');
         iconNavBookmark.src = './img/icon-close.svg';
-        contendorEnlaces.style.background = '#252b46e6';
+        contenedorEnlaces.style.background = '#252b46e6';
     } else {
         navLogoBookmark.classList.add('hidden')
         iconNavBookmark.src = './img/icon-hamburger.svg';
-        contendorEnlaces.style.background = '#fff';
+        contenedorEnlaces.style.background = '#fff';
     }
 })
 
 const closeMenu = () => {
-    logoBookmark.classList.toggle('hidden')
-    contendorEnlaces.classList.toggle('hidden');
-    body.classList.toggle('overflow-hidden')
     if (!navLogoBookmark.classList.contains('hidden')) {
+        logoBookmark.classList.toggle('hidden')
+        contenedorEnlaces.classList.toggle('hidden');
+        body.classList.toggle('overflow-hidden')
         navLogoBookmark.classList.add('hidden')
         iconNavBookmark.src = './img/icon-hamburger.svg';
-        contendorEnlaces.style.background = '#fff';
+        contenedorEnlaces.style.background = '#fff';
     }
 }

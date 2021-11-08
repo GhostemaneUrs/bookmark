@@ -33149,6 +33149,22 @@ video {
   background-color: rgba(247, 247, 247, var(--tw-bg-opacity));
 }
 
+.accordion-title::after {
+  content: "+";
+  font-size: 1.5rem;
+  margin-left: auto;
+}
+
+.accordion-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 1000ms ease max-height;
+}
+
+.active-header::after {
+  content: "-";
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -193548,4 +193564,3 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-

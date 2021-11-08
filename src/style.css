@@ -10,10 +10,25 @@
 }
 
 .btn-purple {
-  @apply bg-bookmard-purple text-white;
+  @apply bg-bookmark-purple text-white;
 }
 
 .btn-white {
-  @apply bg-bookmard-white;
+  @apply bg-bookmark-white;
 }
 
+.accordion-title::after {
+  content: "+";
+  font-size: 1.5rem;
+  @apply ml-auto;
+}
+
+.accordion-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 1000ms ease max-height;
+}
+
+.active-header::after {
+  content: "-";
+}

@@ -5,7 +5,6 @@ const navLogoBookmark = document.getElementById('navLogoBookmark');
 const accordionTitle = document.querySelectorAll('#accordionTitle');
 const contenedorEnlaces = document.getElementById('navEnlace');
 
-
 accordionTitle.forEach((accordionTitle) => {
     accordionTitle.addEventListener('click', () => {
         const height = accordionTitle.nextElementSibling.scrollHeight;
@@ -42,4 +41,31 @@ const closeMenu = () => {
         iconNavBookmark.src = './img/icon-hamburger.svg';
         contenedorEnlaces.style.background = '#fff';
     }
+}
+
+const validateEmail = (email) => {
+    const expresionRegular = /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/;
+    const emailValid = expresionRegular.test(email)
+    let emailSend = document.querySelector('#sendEmail').value
+    console.log(emailSend)
+    if (emailValid === true) {
+        limpiarInput()
+        Swal.fire({
+            icon: 'success',
+            title: 'Your email has been sent, we will contact you',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
+        limpiarInput()
+    }
+}
+
+const limpiarInput = () => {
+    const emailSendContent = document.getElementById('emailUser').value = '';
 }

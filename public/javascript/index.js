@@ -46,8 +46,6 @@ const closeMenu = () => {
 const validateEmail = (email) => {
     const expresionRegular = /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/;
     const emailValid = expresionRegular.test(email)
-    let emailSend = document.querySelector('#sendEmail').value
-    console.log(emailSend)
     if (emailValid === true) {
         limpiarInput()
         Swal.fire({

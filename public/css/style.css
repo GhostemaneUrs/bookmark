@@ -33165,32 +33165,34 @@ video {
   content: "-";
 }
 
-.menuTransition {
-  -webkit-animation: hamburguesa 1s ease 0s 1 normal forwards;
-          animation: hamburguesa 1s ease 0s 1 normal forwards;
-}
-
-@-webkit-keyframes hamburguesa {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
+@media (max-width: 639px) {
+  .menuTransition {
+    -webkit-animation: hamburguesa 1s ease 0s 1 normal forwards;
+            animation: hamburguesa 1s ease 0s 1 normal forwards;
   }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+  @-webkit-keyframes hamburguesa {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
 
-@keyframes hamburguesa {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+  @keyframes hamburguesa {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 

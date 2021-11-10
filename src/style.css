@@ -33,18 +33,19 @@
   content: "-";
 }
 
-.menuTransition {
-  animation: hamburguesa 1s ease 0s 1 normal forwards;
-}
-
-@keyframes hamburguesa {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
+@media (max-width: 639px) {
+  .menuTransition {
+    animation: hamburguesa 1s ease 0s 1 normal forwards;
   }
+  @keyframes hamburguesa {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
